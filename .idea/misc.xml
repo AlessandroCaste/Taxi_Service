@@ -3,11 +3,10 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Taxi_Service/pom.xml" />
-        <option value="$PROJECT_DIR$/Taxi_Service_BackEnd/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/Taxi_Service_FrontEnd/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../Taxi_Service_BackEnd/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

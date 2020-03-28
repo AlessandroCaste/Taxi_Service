@@ -1,19 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="713bb4a2-0c25-4269-b6c4-ccbb47ee318b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ec6c8062-3760-4f10-8cbd-c6d667235afe" name="Default Changelist" comment="Project restructuring with distinct modules">
+      <change afterPath="$PROJECT_DIR$/../LangSandbox" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/androidTest/java/com/example/utente/myasdasd/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/java/com/example/utente/myasdasd/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/java/com/example/utente/myasdasd/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/test/java/com/example/utente/myasdasd/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Myasdasd/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_12_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jheaps_jheaps_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/CityMapb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/CityRoute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/Controller/MapController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/Coordinates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/ReceivedMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityEdge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityEdgeSupplier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityVertex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityVertexSupplier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/Checkpoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/CityMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/JsonValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/Wall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/repository/CheckpointRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/repository/MapRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/repository/WallRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/users/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/users/Taxi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/taxi_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../antlr-mega-tutorial" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../antlr4example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigmc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bullet3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../feup-COMP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kanvas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/out/production/untitled/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigraphGUI/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/libraries/com_fifesoft_rsyntaxtextarea_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/libraries/org_pushing_pixels_radiance_substance_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigraphGUI/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/ANTLRGrammar/Bigraph.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/BigraphGUI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/Resources/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/Bigraph.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/Bigraph.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/Bigraph.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/MainView.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/MainView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/PopupMenuDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxi Service.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Zi3yvy5V2kbl2SpxA2DprAmfQR" />
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/AlessandroCaste/Taxi_Service.git" />
+        <option value="https://github.com/bigmc/bigmc.git" />
+      </set>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Utente\Documents\GitHub\Taxi_Service\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZUphsl8SplQefZV86Pnw6kz4JG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,13 +233,82 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taxi_Service_FrontEnd" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/taxi/fe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/taxi/fe/parsing" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15865384" />
     <property name="project.structure.side.proportion" value="0.25664622" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service_BackEnd\src\main\java\com\taxi\be" />
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service_BackEnd\src\main\java\com\taxi\be\be" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.taxi.fe.feparsing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service\src\main\java\com\taxi\fe\parsing" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.taxi.fe.Application" />
+      <module name="Taxi_Service_FrontEnd" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Taxi_Service_FrontEnd" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Taxi_Service_FrontEnd" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -46,52 +327,205 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="713bb4a2-0c25-4269-b6c4-ccbb47ee318b" name="Default Changelist" comment="" />
-      <created>1585308344592</created>
+      <changelist id="ec6c8062-3760-4f10-8cbd-c6d667235afe" name="Default Changelist" comment="" />
+      <created>1584903648629</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585308344592</updated>
+      <updated>1584903648629</updated>
     </task>
+    <task id="LOCAL-00001" summary="More POST requests, persistence testing">
+      <created>1585065823066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585065823066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Project restructuring with distinct modules">
+      <created>1585251022158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585251022158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Project restructuring with distinct modules">
+      <created>1585266671087</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585266671087</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/Taxi_Service" />
-      <path value="$PROJECT_DIR$/Taxi_Service_FrontEnd" />
-    </ignored-roots>
+    <MESSAGE value="More POST requests, persistence testing" />
+    <MESSAGE value="Project restructuring with distinct modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project restructuring with distinct modules" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="184" key="#Project_Structure" timestamp="1585310975587">
+    <state x="552" y="184" key="#Inspections" timestamp="1585249347614">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="184" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1585310975587" />
-    <state x="645" y="34" key="CommitChangelistDialog2" timestamp="1585424116541">
+    <state x="552" y="184" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1585249347614" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584970794489">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="645" y="34" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585424116541" />
-    <state x="740" y="235" key="FileChooserDialogImpl" timestamp="1585424097244">
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1584970794489" />
+    <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1585247237860">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="235" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585424097244" />
-    <state x="640" y="278" width="260" height="287" key="Github.ShareDialog" timestamp="1585310849023">
+    <state x="3165" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1584915160381" />
+    <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1585247237860" />
+    <state x="1113" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585034115144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="278" width="260" height="287" key="Github.ShareDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585310849023" />
-    <state x="625" y="224" key="NewModule_or_Project.wizard" timestamp="1585308403973">
+    <state x="1113" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585034115144" />
+    <state x="103" y="451" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585248826582">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="625" y="224" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1585308403973" />
-    <state x="440" y="100" key="SettingsEditor" timestamp="1585424108344">
+    <state x="103" y="451" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585248826582" />
+    <state x="756" y="406" width="408" height="246" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585222015296">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="440" y="100" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585424108344" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585424070771">
+    <state x="756" y="406" width="408" height="246" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1585222015296" />
+    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585220795463">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585424070771" />
-    <state x="343" y="135" key="new project wizard" timestamp="1585310787399">
+    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585220795463" />
+    <state x="598" y="52" key="CommitChangelistDialog2" timestamp="1585308112507">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="343" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1585310787399" />
+    <state x="598" y="52" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585308112507" />
+    <state x="205" y="114" key="DiffContextDialog" timestamp="1585266649122">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="205" y="114" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585266649122" />
+    <state width="1877" height="330" key="GridCell.Tab.-1.bottom" timestamp="1585157711205">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.-1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585157711205" />
+    <state width="1877" height="330" key="GridCell.Tab.-1.center" timestamp="1585157711205">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.-1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585157711205" />
+    <state width="1877" height="330" key="GridCell.Tab.-1.left" timestamp="1585157711205">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.-1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585157711205" />
+    <state width="1877" height="330" key="GridCell.Tab.-1.right" timestamp="1585157711205">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.-1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585157711205" />
+    <state width="1877" height="330" key="GridCell.Tab.0.bottom" timestamp="1585227806327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="1877" height="330" key="GridCell.Tab.0.center" timestamp="1585227806326">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806326" />
+    <state width="1877" height="330" key="GridCell.Tab.0.left" timestamp="1585227806326">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806326" />
+    <state width="1877" height="330" key="GridCell.Tab.0.right" timestamp="1585227806327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="1877" height="330" key="GridCell.Tab.1.bottom" timestamp="1585227806327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="1877" height="330" key="GridCell.Tab.1.center" timestamp="1585227806327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="1877" height="330" key="GridCell.Tab.1.left" timestamp="1585227806327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="1877" height="330" key="GridCell.Tab.1.right" timestamp="1585227806327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="1877" height="330" key="GridCell.Tab.2.bottom" timestamp="1585157705289">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585157705289" />
+    <state width="1877" height="330" key="GridCell.Tab.2.center" timestamp="1585157705288">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585157705288" />
+    <state width="1877" height="330" key="GridCell.Tab.2.left" timestamp="1585157705288">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585157705288" />
+    <state width="1877" height="330" key="GridCell.Tab.2.right" timestamp="1585157705289">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585157705289" />
+    <state x="719" y="236" key="RollbackChangesDialog" timestamp="1584970692279">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="719" y="236" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1584970692279" />
+    <state x="328" y="130" key="SettingsEditor" timestamp="1585251102210">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="328" y="130" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585251102210" />
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585308199746">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1585308199746" />
+    <state x="776" y="303" width="560" height="443" key="chooseDestDirectoryDialog" timestamp="1585249359888">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="776" y="303" width="560" height="443" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585249359888" />
+    <state x="1129" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585308059279">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1129" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585308059279" />
+    <state x="654" y="241" width="630" height="568" key="find.popup" timestamp="1585266702303">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="654" y="241" width="630" height="568" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1585266702303" />
+    <state x="659" y="317" key="git4idea.merge.GitPullDialog" timestamp="1585120129769">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="659" y="317" key="git4idea.merge.GitPullDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585120129769" />
+    <state x="167" y="149" key="new project wizard" timestamp="1585249020966">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="167" y="149" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1585249020966" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1585249967134">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1585249967134" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Taxi_Service_BackEnd/src/main/java/com/taxi/be/JsonValidator.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Taxi_Service_BackEnd/src/main/java/com/taxi/be/JsonValidator.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
