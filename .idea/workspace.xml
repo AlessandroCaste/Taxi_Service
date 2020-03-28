@@ -2,116 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="713bb4a2-0c25-4269-b6c4-ccbb47ee318b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_commons_commons_text_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_12_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_jheaps_jheaps_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_aop_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_beans_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_context_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_core_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_expression_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_orm_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_web_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/CityMapb.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/CityRoute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/Controller/MapController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/Coordinates.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/ReceivedMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/graph/CityEdge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/graph/CityEdgeSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/graph/CityVertex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/graph/CityVertexSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/parsing/Checkpoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/parsing/CityMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/parsing/JsonValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/parsing/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/parsing/Wall.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/repository/CheckpointRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/repository/MapRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/repository/WallRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/users/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/com/taxi/springboot/users/Taxi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taxi_Service_FrontEnd/target/classes/taxi_map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taxi_Service_FrontEnd/Taxi Service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Taxi_Service_FrontEnd" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Zi3yvy5V2kbl2SpxA2DprAmfQR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -131,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Taxi_Service_FrontEnd" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15865384" />
     <property name="project.structure.side.proportion" value="0.25664622" />
@@ -165,6 +57,7 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/Taxi_Service" />
+      <path value="$PROJECT_DIR$/Taxi_Service_FrontEnd" />
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
@@ -172,14 +65,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1585310975587" />
-    <state x="645" y="34" key="CommitChangelistDialog2" timestamp="1585326980535">
+    <state x="645" y="34" key="CommitChangelistDialog2" timestamp="1585424116541">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="645" y="34" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585326980535" />
-    <state x="740" y="235" key="FileChooserDialogImpl" timestamp="1585310762699">
+    <state x="645" y="34" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585424116541" />
+    <state x="740" y="235" key="FileChooserDialogImpl" timestamp="1585424097244">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="235" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585310762699" />
+    <state x="740" y="235" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585424097244" />
     <state x="640" y="278" width="260" height="287" key="Github.ShareDialog" timestamp="1585310849023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -188,14 +81,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="625" y="224" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1585308403973" />
-    <state x="440" y="100" key="SettingsEditor" timestamp="1585310801394">
+    <state x="440" y="100" key="SettingsEditor" timestamp="1585424108344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="440" y="100" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585310801394" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585326573264">
+    <state x="440" y="100" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585424108344" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585424070771">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585326573264" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585424070771" />
     <state x="343" y="135" key="new project wizard" timestamp="1585310787399">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
