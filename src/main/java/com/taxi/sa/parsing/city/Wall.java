@@ -15,6 +15,13 @@ public class Wall implements Serializable {
     @JoinColumn(name = "city_id")
     private CityMap cityMap;
 
+    public Wall(int x1, int y1, int x2, int y2) {
+        this.x1 = x1;
+        this.x2 = x2;
+        this.y1 = y1;
+        this.y2 = y2;
+    }
+
     public int getX1() {
         return x1;
     }
@@ -35,28 +42,16 @@ public class Wall implements Serializable {
         return cityMap;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public void setX1(int x1) {
-        this.x1 = x1;
-    }
-
-    public void setY1(int y1) {
-        this.y1 = y1;
-    }
-
-    public void setX2(int x2) {
-        this.x2 = x2;
-    }
-
-    public void setY2(int y2) {
-        this.y2 = y2;
-    }
-
     public void setCityMap(CityMap cityMap) {
         this.cityMap = cityMap;
+    }
+
+    public String coordinatesToString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("(").append(x1).append(",").append(y1)
+                .append(")->(")
+                .append(x2).append(",").append(y2).append(")");
+        return sb.toString();
     }
 
 }

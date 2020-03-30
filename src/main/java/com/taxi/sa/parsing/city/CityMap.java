@@ -1,5 +1,7 @@
 package com.taxi.sa.parsing.city;
 
+import com.taxi.sa.parsing.users.Taxi;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 public class CityMap {
 
     @Id
+    @Column(name="city_id")
     private String cityId;
     private int width;
     private int height;
@@ -24,6 +27,12 @@ public class CityMap {
             orphanRemoval = true
     )
     private List<Checkpoint> checkpoints;
+    @OneToMany(
+            mappedBy = "cityMap",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<Taxi> taxis;
 
     public CityMap() {}
 
@@ -33,6 +42,7 @@ public class CityMap {
         this.height = height;
         walls = new ArrayList<>();
         checkpoints = new ArrayList<>();
+        taxis = new ArrayList<>();
     }
 
     public String getCityId() {
@@ -65,6 +75,19 @@ public class CityMap {
         return checkpoints;
     }
 
+    public void addTaxi(Taxi taxi) {
+        taxis.remove(taxi);
+        taxis.add(taxi);
+    }
+
+    public List<Taxi> getTaxis() { return taxis; }
+
+    public void clear() {
+        walls.clear();
+        checkpoints.clear();
+        taxis.clear();
+    }
+
     @Override
     public boolean equals(Object o) {
         return (o instanceof CityMap) && (cityId.toLowerCase().equals(((CityMap) o).getCityId().toLowerCase()));
@@ -77,7 +100,7 @@ public class CityMap {
 
     @Override
     public String toString() {
-        return "City = " + cityId + " width " + width + " height " + height;
+        return "City = " + cityId + " width = " + width + " height = " + height;
     }
 
 }

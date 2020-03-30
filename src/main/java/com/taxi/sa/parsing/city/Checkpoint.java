@@ -4,16 +4,26 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@IdClass(Checkpoint.class)
+@Table(name="Checkpoint")
 public class Checkpoint implements Serializable {
-    private float price;
 
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
     @ManyToOne
-    @JoinColumn(name="cityId",nullable = false)
+    @JoinColumn(name="city_id",nullable = false)
     private CityMap cityMap;
+    private float price;
     private int x1,y1,x2,y2;
+
+    public Checkpoint() {}
+
+    public Checkpoint(float price, int x1, int y1, int x2, int y2) {
+        this.price = price;
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+    }
 
     public float getPrice() {
         return price;
@@ -45,6 +55,14 @@ public class Checkpoint implements Serializable {
 
     public int getY2() {
         return y2;
+    }
+
+    public String coordinatesToString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("(").append(x1).append(",").append(y1)
+                .append(")->(")
+                .append(x2).append(",").append(y2).append(")");
+        return sb.toString();
     }
 
 }
