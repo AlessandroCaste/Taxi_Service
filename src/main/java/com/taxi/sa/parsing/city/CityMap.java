@@ -78,6 +78,7 @@ public class CityMap {
     public void addTaxi(Taxi taxi) {
         taxis.remove(taxi);
         taxis.add(taxi);
+        taxi.setCity(this);
     }
 
     public List<Taxi> getTaxis() { return taxis; }

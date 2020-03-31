@@ -38,4 +38,14 @@ public class Taxi {
         this.cityMap = cityMap;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        return (o instanceof Taxi) && (taxiId.toLowerCase().equals(((Taxi) o).getTaxiId().toLowerCase()));
+    }
+
+    @Override
+    public int hashCode() {
+        return taxiId.hashCode();
+    }
+
 }

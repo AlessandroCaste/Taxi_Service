@@ -54,4 +54,19 @@ public class Wall implements Serializable {
         return sb.toString();
     }
 
+    @Override
+    public String toString() {
+        return "Wall in " + cityMap.getCityId() + " | " + coordinatesToString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return (o instanceof Wall) && (toString().equals(o.toString()));
+    }
+
+    @Override
+    public int hashCode() {
+        return toString().hashCode();
+    }
+
 }

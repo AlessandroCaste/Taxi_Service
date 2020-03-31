@@ -65,4 +65,19 @@ public class Checkpoint implements Serializable {
         return sb.toString();
     }
 
+    @Override
+    public String toString() {
+        return "Checkpoints in " + cityMap.getCityId() + " - price: " + price + " | " + coordinatesToString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return (o instanceof Checkpoint) && (toString().equals(o.toString()));
+    }
+
+    @Override
+    public int hashCode() {
+        return toString().hashCode();
+    }
+
 }
