@@ -1,12 +1,13 @@
 package com.taxi.sa.parsing.input;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.taxi.sa.parsing.InputMapInterface;
 import com.taxi.sa.parsing.output.CityMap;
 
 import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
 
-public class InputMap {
+public class InputMap implements InputMapInterface {
 
     @JsonProperty("city")
     @NotEmpty

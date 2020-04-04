@@ -1,8 +1,10 @@
 package com.taxi.sa.parsing;
 
-import com.taxi.sa.parsing.input.InputMap;
+import com.taxi.sa.exceptions.CityMapParsingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.persistence.PersistenceException;
 
 @Service
 public class CityMapService {
@@ -21,8 +23,11 @@ public class CityMapService {
         this.persistanceService = persistanceService;
     }
 
-    public void insertion(InputMap inputMap) {
-        validatorService.validate(inputMap.getWalls(),inputMap.getCheckpoints(),inputMap.getWidth(),inputMap.getHeight());
+    public void insertion(InputMapInterface inputMap) throws CityMapParsingException, PersistenceException {
+        boolean validationResult = validatorService.validate(inputMap);
+        if(!validationResult)
+            throw new CityMapParsingException();
+        persistanceService.save(inputMap);
     }
 
 }

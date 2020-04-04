@@ -1,7 +1,10 @@
 package com.taxi.sa.parsing;
 
-import com.taxi.sa.parsing.input.InputMap;
+import com.taxi.sa.parsing.input.InputCheckpoint;
+import com.taxi.sa.parsing.input.InputWall;
+import com.taxi.sa.parsing.output.Checkpoint;
 import com.taxi.sa.parsing.output.CityMap;
+import com.taxi.sa.parsing.output.Wall;
 import com.taxi.sa.parsing.users.Taxi;
 import com.taxi.sa.repositories.CheckpointRepository;
 import com.taxi.sa.repositories.MapRepository;
@@ -10,6 +13,8 @@ import com.taxi.sa.repositories.WallRepository;
 import org.hibernate.MappingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 // Verifies input data is sound
 @Service
@@ -40,23 +45,34 @@ public class PersistanceService {
         this.taxiRepository = taxiRepository;
     }
 
-    public void storeCityMap(InputMap inputMap) {
-   /*     String cityId = inputMap.getCityId();
-        CityMap newMap = inputMap.getCityMap();
-        Optional<CityMap> oldMap = mapRepository.findById(cityId);
-        if(oldMap.isPresent()) {
-            oldMap.get().clear();
-            mapRepository.delete(oldMap.get());
+    public void save(InputMapInterface inputMap) {
+
+        // Creating the new CityMap, eventually overwriting any old entry
+        String cityId = inputMap.getCityId();
+        int width = inputMap.getWidth();
+        int height = inputMap.getHeight();
+        CityMap newEntry = new CityMap(cityId,width,height);
+        Optional<CityMap> previousEntry = mapRepository.findById(cityId);
+        if(previousEntry.isPresent()) {
+            previousEntry.get().clear();
+            mapRepository.delete(previousEntry.get());
         }
-        mapRepository.save(newMap);
-        for(Wall wall: inputMap.getWalls()) {
-            newMap.addWall(wall);
-            wallRepository.save(wall);
+        mapRepository.save(newEntry);
+
+        // Creating and linking walls
+        for(InputWall inputWall: inputMap.getWalls()) {
+            Wall outputWall = new Wall(inputWall);
+            newEntry.addWall(outputWall);
+            wallRepository.save(outputWall);
         }
-        for(Checkpoint checkpoint: inputMap.getCheckpoints()) {
-            newMap.addCheckpoint(checkpoint);
-            checkpointRepository.save(checkpoint);
-        }*/
+
+        // Creating and linking checkpoints
+        for(InputCheckpoint inputCheckpoint: inputMap.getCheckpoints()) {
+            Checkpoint outputCheckpoint = new Checkpoint(inputCheckpoint);
+            newEntry.addCheckpoint(outputCheckpoint);
+            checkpointRepository.save(outputCheckpoint);
+        }
+
     }
 
     public void storeTaxi(String taxiId, String city, Coordinate position) {

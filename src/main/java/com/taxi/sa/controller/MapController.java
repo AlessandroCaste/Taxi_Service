@@ -1,8 +1,9 @@
 package com.taxi.sa.controller;
 
+import com.taxi.sa.exceptions.CityMapParsingException;
 import com.taxi.sa.parsing.CityMapService;
 import com.taxi.sa.parsing.Coordinate;
-import com.taxi.sa.parsing.input.InputMap;
+import com.taxi.sa.parsing.InputMapInterface;
 import com.taxi.sa.parsing.users.UserRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -36,9 +37,9 @@ public class MapController {
 
     @Async
     @RequestMapping(value = "/maps/", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<String> addMap(@Valid @RequestBody InputMap inputMap) {
-        cityMapService.insertion(inputMap);
-        return new ResponseEntity<>("{}", HttpStatus.CREATED);
+    public ResponseEntity<String> addMap(@Valid @RequestBody InputMapInterface inputMap) throws CityMapParsingException {
+            cityMapService.insertion(inputMap);
+            return new ResponseEntity<>("{}", HttpStatus.CREATED);
     }
 
     @Async

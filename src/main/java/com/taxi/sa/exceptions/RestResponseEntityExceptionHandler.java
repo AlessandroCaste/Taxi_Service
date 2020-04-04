@@ -22,8 +22,14 @@ public class RestResponseEntityExceptionHandler {
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     @ResponseBody
-    ResponseEntity<String> handleControllerException(HttpServletRequest request, Throwable ex) {
+    ResponseEntity<String> handleHttpMessageNotReadableException(HttpServletRequest request, Throwable ex) {
         return new ResponseEntity<>("malformed submission", HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(CityMapParsingException.class)
+    @ResponseBody
+    ResponseEntity<String> handleCityMapParsingException(Throwable ex) {
+        return new ResponseEntity<>("invalid map data",HttpStatus.BAD_REQUEST);
     }
 
    /* @ExceptionHandler(Exception.class)

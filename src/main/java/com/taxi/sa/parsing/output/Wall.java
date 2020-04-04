@@ -1,5 +1,7 @@
 package com.taxi.sa.parsing.output;
 
+import com.taxi.sa.parsing.input.InputWall;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -17,13 +19,18 @@ public class Wall implements Serializable {
     @JoinColumn(name = "city_id")
     private CityMap cityMap;
 
-    public Wall() {}
-
     public Wall(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
-        this.x2 = x2;
         this.y1 = y1;
+        this.x2 = x2;
         this.y2 = y2;
+    }
+
+    public Wall(InputWall inputWall) {
+        this.x1 = inputWall.getX1();
+        this.y1 = inputWall.getY1();
+        this.x2 = inputWall.getX2();
+        this.y2 = inputWall.getY2();
     }
 
     public int getX1() {

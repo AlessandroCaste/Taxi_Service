@@ -10,10 +10,14 @@ import java.util.ArrayList;
 public class ValidatorService {
 
     // A simple check to verify whether walls and checkpoints have been defined within map width and heights
-    public boolean validate(ArrayList<InputWall> walls, ArrayList<InputCheckpoint> checkpoints, int width, int height) {
-        boolean ciao = walls.stream().allMatch(x -> checkWidth(x.getX1(),x.getX2(),width) && checkHeight(x.getY1(),x.getY2(),height));
-        boolean ciao2 = checkpoints.stream().allMatch(x -> checkWidth(x.getX1(),x.getX2(),width) && checkHeight(x.getY1(),x.getY2(),height));
-        return ciao && ciao2;
+    public boolean validate(InputMapInterface inputMap) {
+        int width = inputMap.getWidth();
+        int height = inputMap.getHeight();
+        ArrayList<InputWall> walls = inputMap.getWalls();
+        ArrayList<InputCheckpoint> checkpoints = inputMap.getCheckpoints();
+        boolean checkWalls = walls.stream().allMatch(x -> checkWidth(x.getX1(),x.getX2(),width) && checkHeight(x.getY1(),x.getY2(),height));
+        boolean checkCheckpoints = checkpoints.stream().allMatch(x -> checkWidth(x.getX1(),x.getX2(),width) && checkHeight(x.getY1(),x.getY2(),height));
+        return checkWalls && checkCheckpoints;
     }
 
     private boolean checkWidth(int x1, int x2, int mapWidth) {
