@@ -1,4 +1,4 @@
-package com.taxi.sa.parsing.city;
+package com.taxi.sa.parsing.output;
 
 import com.taxi.sa.parsing.users.Taxi;
 

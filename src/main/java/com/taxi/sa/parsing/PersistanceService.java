@@ -1,8 +1,7 @@
 package com.taxi.sa.parsing;
 
-import com.taxi.sa.parsing.city.Checkpoint;
-import com.taxi.sa.parsing.city.CityMap;
-import com.taxi.sa.parsing.city.Wall;
+import com.taxi.sa.parsing.input.InputMap;
+import com.taxi.sa.parsing.output.CityMap;
 import com.taxi.sa.parsing.users.Taxi;
 import com.taxi.sa.repositories.CheckpointRepository;
 import com.taxi.sa.repositories.MapRepository;
@@ -12,10 +11,9 @@ import org.hibernate.MappingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
+// Verifies input data is sound
 @Service
-public class JsonValidator {
+public class PersistanceService {
 
     private MapRepository mapRepository;
     private WallRepository wallRepository;
@@ -42,23 +40,23 @@ public class JsonValidator {
         this.taxiRepository = taxiRepository;
     }
 
-    public void storeCityMap(ReceivedMap receivedMap) {
-        String cityId = receivedMap.getCityId();
-        CityMap newMap = receivedMap.getCityMap();
+    public void storeCityMap(InputMap inputMap) {
+   /*     String cityId = inputMap.getCityId();
+        CityMap newMap = inputMap.getCityMap();
         Optional<CityMap> oldMap = mapRepository.findById(cityId);
         if(oldMap.isPresent()) {
             oldMap.get().clear();
             mapRepository.delete(oldMap.get());
         }
         mapRepository.save(newMap);
-        for(Wall wall: receivedMap.getWalls()) {
+        for(Wall wall: inputMap.getWalls()) {
             newMap.addWall(wall);
             wallRepository.save(wall);
         }
-        for(Checkpoint checkpoint: receivedMap.getCheckpoints()) {
+        for(Checkpoint checkpoint: inputMap.getCheckpoints()) {
             newMap.addCheckpoint(checkpoint);
             checkpointRepository.save(checkpoint);
-        }
+        }*/
     }
 
     public void storeTaxi(String taxiId, String city, Coordinate position) {

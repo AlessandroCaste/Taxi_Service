@@ -1,7 +1,7 @@
 package com.taxi.sa.repositories;
 
-import com.taxi.sa.parsing.city.Checkpoint;
-import com.taxi.sa.parsing.city.CityMap;
+import com.taxi.sa.parsing.output.Checkpoint;
+import com.taxi.sa.parsing.output.CityMap;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

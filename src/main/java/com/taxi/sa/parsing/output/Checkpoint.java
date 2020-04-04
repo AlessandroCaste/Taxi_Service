@@ -1,27 +1,44 @@
-package com.taxi.sa.parsing.city;
+package com.taxi.sa.parsing.output;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table (name="Wall")
-public class Wall implements Serializable {
+@Table(name="Checkpoint")
+public class Checkpoint implements Serializable {
 
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name="wall_id",updatable = false)
     private long id;
-    private int x1,y1,x2,y2;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id")
+    @ManyToOne
+    @JoinColumn(name="city_id",nullable = false)
     private CityMap cityMap;
+    private float price;
+    private int x1,y1,x2,y2;
 
-    public Wall() {}
+    public Checkpoint() {}
 
-    public Wall(int x1, int y1, int x2, int y2) {
+    public Checkpoint(float price, int x1, int y1, int x2, int y2) {
+        this.price = price;
         this.x1 = x1;
-        this.x2 = x2;
         this.y1 = y1;
+        this.x2 = x2;
         this.y2 = y2;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public CityMap getCityMap() {
+        return cityMap;
+    }
+
+    public void setCityMap(CityMap cityMap) {
+        this.cityMap = cityMap;
     }
 
     public int getX1() {
@@ -40,14 +57,6 @@ public class Wall implements Serializable {
         return y2;
     }
 
-    public CityMap getCityMap() {
-        return cityMap;
-    }
-
-    public void setCityMap(CityMap cityMap) {
-        this.cityMap = cityMap;
-    }
-
     public String coordinatesToString() {
         StringBuilder sb = new StringBuilder();
         sb.append("(").append(x1).append(",").append(y1)
@@ -58,15 +67,12 @@ public class Wall implements Serializable {
 
     @Override
     public String toString() {
-        String cityId = "unassigned";
-        if(cityMap.getCityId() != null)
-            cityId = cityMap.getCityId();
-        return "Wall in " + cityId + " | " + coordinatesToString();
+        return "Checkpoints in " + cityMap.getCityId() + " - price: " + price + " | " + coordinatesToString();
     }
 
     @Override
     public boolean equals(Object o) {
-        return (o instanceof Wall) && (toString().equals(o.toString()));
+        return (o instanceof Checkpoint) && (toString().equals(o.toString()));
     }
 
     @Override

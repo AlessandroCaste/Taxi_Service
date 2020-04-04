@@ -1,10 +1,9 @@
 package com.taxi.sa.controller;
 
+import com.taxi.sa.parsing.CityMapService;
 import com.taxi.sa.parsing.Coordinate;
-import com.taxi.sa.parsing.JsonValidator;
-import com.taxi.sa.parsing.ReceivedMap;
+import com.taxi.sa.parsing.input.InputMap;
 import com.taxi.sa.parsing.users.UserRequest;
-import org.hibernate.MappingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -22,11 +21,11 @@ public class MapController {
     @Value("${spring.application.name}")
     String appName;
 
-    private JsonValidator jsonValidator;
+    private CityMapService cityMapService;
 
     @Autowired
-    public void setJsonValidator(JsonValidator jsonValidator) {
-        this.jsonValidator = jsonValidator;
+    public void setCityMapService(CityMapService cityMapService) {
+        this.cityMapService = cityMapService;
     }
 
     @GetMapping("/")
@@ -37,20 +36,21 @@ public class MapController {
 
     @Async
     @RequestMapping(value = "/maps/", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<String> addMap(@Valid @RequestBody ReceivedMap receivedMap) {
-        jsonValidator.storeCityMap(receivedMap);
+    public ResponseEntity<String> addMap(@Valid @RequestBody InputMap inputMap) {
+        cityMapService.insertion(inputMap);
         return new ResponseEntity<>("{}", HttpStatus.CREATED);
     }
 
     @Async
     @RequestMapping(path = "/maps/{city}/taxi_positions/{taxiId}", method = RequestMethod.POST, consumes = "application/json")
     public ResponseEntity<String> insertTaxi(@PathVariable(value = "city") String city, @PathVariable(value = "taxiId") String taxiId, @Valid @RequestBody Coordinate position) {
-        try {
-            jsonValidator.storeTaxi(taxiId,city,position);
+        return new ResponseEntity<>("{}",HttpStatus.OK);
+        /*       try {
+            persistanceService.storeTaxi(taxiId,city,position);
             return new ResponseEntity<>("{}",HttpStatus.CREATED);
-        } catch(MappingException e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-        }
+        } catch(MappingException e) {*/
+     //       return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+     //   }
     }
 
     @Async

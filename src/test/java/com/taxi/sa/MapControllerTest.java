@@ -1,7 +1,7 @@
 package com.taxi.sa;
 
 import com.taxi.sa.controller.MapController;
-import com.taxi.sa.parsing.JsonValidator;
+import com.taxi.sa.parsing.PersistanceService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ public class MapControllerTest {
     private MockMvc mvc;
 
     @MockBean
-    private JsonValidator jsonValidator;
+    private PersistanceService persistanceService;
 
     // Testing controller correctly sets up
     @Test

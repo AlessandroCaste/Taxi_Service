@@ -1,7 +1,7 @@
 package com.taxi.sa.parsing.users;
 
 import com.taxi.sa.parsing.Coordinate;
-import com.taxi.sa.parsing.city.CityMap;
+import com.taxi.sa.parsing.output.CityMap;
 
 import javax.persistence.*;
 
