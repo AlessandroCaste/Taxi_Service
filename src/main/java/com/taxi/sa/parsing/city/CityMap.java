@@ -3,6 +3,7 @@ package com.taxi.sa.parsing.city;
 import com.taxi.sa.parsing.users.Taxi;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
 public class CityMap {
 
     @Id
+    @NotNull
     @Column(name="city_id")
     private String cityId;
     private int width;

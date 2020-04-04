@@ -12,6 +12,8 @@ import org.hibernate.MappingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class JsonValidator {
 
@@ -41,10 +43,12 @@ public class JsonValidator {
     }
 
     public void storeCityMap(ReceivedMap receivedMap) {
+        String cityId = receivedMap.getCityId();
         CityMap newMap = receivedMap.getCityMap();
-        if(mapRepository.existsById(newMap.getCityId())) {
-            newMap.clear();
-            mapRepository.delete(newMap);
+        Optional<CityMap> oldMap = mapRepository.findById(cityId);
+        if(oldMap.isPresent()) {
+            oldMap.get().clear();
+            mapRepository.delete(oldMap.get());
         }
         mapRepository.save(newMap);
         for(Wall wall: receivedMap.getWalls()) {
@@ -66,5 +70,6 @@ public class JsonValidator {
             taxiRepository.delete(taxi);
         taxiRepository.save(taxi);
     }
+
 }
 

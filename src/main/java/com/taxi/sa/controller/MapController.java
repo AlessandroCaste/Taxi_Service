@@ -3,7 +3,6 @@ package com.taxi.sa.controller;
 import com.taxi.sa.parsing.Coordinate;
 import com.taxi.sa.parsing.JsonValidator;
 import com.taxi.sa.parsing.ReceivedMap;
-import com.taxi.sa.parsing.users.Taxi;
 import com.taxi.sa.parsing.users.UserRequest;
 import org.hibernate.MappingException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +39,7 @@ public class MapController {
     @RequestMapping(value = "/maps/", method = RequestMethod.POST, consumes = "application/json")
     public ResponseEntity<String> addMap(@Valid @RequestBody ReceivedMap receivedMap) {
         jsonValidator.storeCityMap(receivedMap);
-        return new ResponseEntity<>("{}", HttpStatus.OK);
+        return new ResponseEntity<>("{}", HttpStatus.CREATED);
     }
 
     @Async

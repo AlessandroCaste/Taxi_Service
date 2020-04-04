@@ -1,6 +1,5 @@
 package com.taxi.sa.exceptions;
 
-import jdk.jfr.ContentType;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
