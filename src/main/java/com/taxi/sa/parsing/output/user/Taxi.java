@@ -39,7 +39,7 @@ public class Taxi {
         y = position.getY();
     }
 
-    public void setCity(CityMap cityMap) {
+    public void setCityMap(CityMap cityMap) {
         this.cityMap = cityMap;
     }
 

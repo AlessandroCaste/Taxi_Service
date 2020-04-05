@@ -76,15 +76,11 @@ public class PersistanceService {
 
     public void save(String taxiId, String city, InputCoordinate position) throws PersistenceException {
         CityMap referencedMap = mapRepository.findById(city).get();
-        Taxi taxi = new Taxi(taxiId, position);
         if(taxiRepository.findById(taxiId).isPresent())
-            taxiRepository.delete(taxi);
+            taxiRepository.deleteById(taxiId);
+        Taxi taxi = new Taxi(taxiId, position);
         referencedMap.addTaxi(taxi);
-        taxiRepository.save(taxi);
-    }
-
-    public void save(InputCoordinate inputCoordinate) {
-
+        mapRepository.save(referencedMap);
     }
 
 }

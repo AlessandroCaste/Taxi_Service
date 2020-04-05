@@ -61,7 +61,7 @@ public class MapControllerTest {
         mvc.perform(MockMvcRequestBuilders.post("/maps/")
                 .contentType(MediaType.APPLICATION_XML))
                 .andDo(MockMvcResultHandlers.print())
-                .andExpect(status().is4xxClientError())
+                .andExpect(status().isUnsupportedMediaType())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
                 .andExpect(content().string("json data required"))
                 .andReturn();
@@ -74,6 +74,45 @@ public class MapControllerTest {
                         "  \"height\": 10,\n}"))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().is4xxClientError())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+                .andExpect(content().string("malformed submission"))
+                .andReturn();
+    }
+
+    // Taxi insertion
+    @Test
+    public void postTaxi() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxiblu/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_position.json")))))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isCreated())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+                .andExpect(content().string("{}"))
+                .andReturn();
+    }
+
+    // Wrong taxi insertion
+    @Test
+    public void postWrongTaxi() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxiblu/")
+                .contentType(MediaType.APPLICATION_XML)
+                .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_position.json")))))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isUnsupportedMediaType())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+                .andExpect(content().string("json data required"))
+                .andReturn();
+
+        mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxiblu/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\n" +
+                        "\t\"x\" : 1,\n" +
+                        "\t\"y\" : 2,\n" +
+                        "\t\"z\" : 3\n" +
+                        "}"))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isBadRequest())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
                 .andExpect(content().string("malformed submission"))
                 .andReturn();

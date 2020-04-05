@@ -39,7 +39,7 @@ public class CityMapService {
         boolean validationResult = validatorService.validate(cityId, inputCoordinate);
         if(!validationResult)
             throw new TaxiValidationException();
-        persistanceService.save(cityId,taxiId,inputCoordinate);
+        persistanceService.save(taxiId,cityId,inputCoordinate);
     }
 
     public void insertion(String cityId, InputRequest inputRequest) throws UserRequestException {
