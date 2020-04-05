@@ -1,7 +1,7 @@
 package com.taxi.sa;
 
 import com.taxi.sa.controller.MapController;
-import com.taxi.sa.parsing.PersistanceService;
+import com.taxi.sa.parsing.CityMapService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ public class MapControllerTest {
     private MockMvc mvc;
 
     @MockBean
-    private PersistanceService persistanceService;
+    private CityMapService cityMapService;
 
     // Testing controller correctly sets up
     @Test

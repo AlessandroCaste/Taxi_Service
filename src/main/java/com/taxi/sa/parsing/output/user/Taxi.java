@@ -1,7 +1,7 @@
-package com.taxi.sa.parsing.users;
+package com.taxi.sa.parsing.output.user;
 
-import com.taxi.sa.parsing.Coordinate;
-import com.taxi.sa.parsing.output.CityMap;
+import com.taxi.sa.parsing.input.user.InputCoordinate;
+import com.taxi.sa.parsing.output.city.CityMap;
 
 import javax.persistence.*;
 
@@ -18,11 +18,16 @@ public class Taxi {
 
     public Taxi() {}
 
-    public Taxi(String taxiId,Coordinate position,CityMap cityMap) {
+    public Taxi(String taxiId, InputCoordinate position) {
         this.taxiId = taxiId;
         this.x = position.getX();
         this.y = position.getY();
-        this.cityMap = cityMap;
+    }
+
+    public Taxi(String taxiId, int x, int y) {
+        this.taxiId = taxiId;
+        this.x = x;
+        this.y = y;
     }
 
     public String getTaxiId() {

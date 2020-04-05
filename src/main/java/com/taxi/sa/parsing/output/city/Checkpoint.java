@@ -1,6 +1,6 @@
-package com.taxi.sa.parsing.output;
+package com.taxi.sa.parsing.output.city;
 
-import com.taxi.sa.parsing.input.InputCheckpoint;
+import com.taxi.sa.parsing.input.city.InputCheckpoint;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -17,7 +17,9 @@ public class Checkpoint implements Serializable {
     private float price;
     private int x1,y1,x2,y2;
 
-    public Checkpoint(float price, int x1, int x2, int y1, int y2) {
+    public Checkpoint() {}
+
+    public Checkpoint(float price, int x1, int y1, int x2, int y2) {
         this.price = price;
         this.x1 = x1;
         this.y1 = y1;

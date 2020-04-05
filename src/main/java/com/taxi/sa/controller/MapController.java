@@ -1,10 +1,12 @@
 package com.taxi.sa.controller;
 
 import com.taxi.sa.exceptions.CityMapParsingException;
+import com.taxi.sa.exceptions.TaxiValidationException;
+import com.taxi.sa.exceptions.UserRequestException;
 import com.taxi.sa.parsing.CityMapService;
-import com.taxi.sa.parsing.Coordinate;
 import com.taxi.sa.parsing.InputMapInterface;
-import com.taxi.sa.parsing.users.UserRequest;
+import com.taxi.sa.parsing.input.user.InputCoordinate;
+import com.taxi.sa.parsing.input.user.InputRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -44,20 +46,18 @@ public class MapController {
 
     @Async
     @RequestMapping(path = "/maps/{city}/taxi_positions/{taxiId}", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<String> insertTaxi(@PathVariable(value = "city") String city, @PathVariable(value = "taxiId") String taxiId, @Valid @RequestBody Coordinate position) {
-        return new ResponseEntity<>("{}",HttpStatus.OK);
-        /*       try {
-            persistanceService.storeTaxi(taxiId,city,position);
-            return new ResponseEntity<>("{}",HttpStatus.CREATED);
-        } catch(MappingException e) {*/
-     //       return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-     //   }
+    public ResponseEntity<String> insertTaxi(@PathVariable(value = "city") String city, @PathVariable(value = "taxiId") String taxiId, @Valid @RequestBody InputCoordinate position)
+    throws TaxiValidationException {
+        cityMapService.insertion(city, taxiId, position);
+        return new ResponseEntity<>("{}",HttpStatus.CREATED);
     }
 
+    // I'm assuming here that the user is also providing the city!
     @Async
-    @RequestMapping(value = "/user_requests/", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<String> computeRoute(@Valid @RequestBody UserRequest userRequest) {
-        System.out.println("ciao");
+    @RequestMapping(value = "{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json")
+    public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)
+    throws UserRequestException {
+        cityMapService.insertion(city,inputRequest);
         return new ResponseEntity<>("{}", HttpStatus.OK);
     }
 

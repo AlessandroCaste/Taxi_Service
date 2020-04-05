@@ -1,10 +1,9 @@
 package com.taxi.sa;
 
-import com.taxi.sa.parsing.Coordinate;
-import com.taxi.sa.parsing.output.Checkpoint;
-import com.taxi.sa.parsing.output.CityMap;
-import com.taxi.sa.parsing.output.Wall;
-import com.taxi.sa.parsing.users.Taxi;
+import com.taxi.sa.parsing.output.city.Checkpoint;
+import com.taxi.sa.parsing.output.city.CityMap;
+import com.taxi.sa.parsing.output.city.Wall;
+import com.taxi.sa.parsing.output.user.Taxi;
 import com.taxi.sa.repositories.CheckpointRepository;
 import com.taxi.sa.repositories.MapRepository;
 import com.taxi.sa.repositories.TaxiRepository;
@@ -120,11 +119,11 @@ public class EntitiesRetrievalTest {
         mapManager.flush();
 
         // Creating many taxis with the same id to check integrity
-        Taxi taxi1 = new Taxi("taxi blu 01",new Coordinate(1,1),milan);
-        Taxi taxi2 = new Taxi("taxi blu 01",new Coordinate(2,2),milan);
-        Taxi taxi3 = new Taxi("taxi blu 01",new Coordinate(3,3),milan);
-        Taxi taxi4 = new Taxi("taxi blu 01",new Coordinate(4,4),milan);
-        Taxi taxi5 = new Taxi("taxi blu 01",new Coordinate(5,5),milan);
+        Taxi taxi1 = new Taxi("taxi blu 01",1,1);
+        Taxi taxi2 = new Taxi("taxi blu 01",2,2);
+        Taxi taxi3 = new Taxi("taxi blu 01",3,3);
+        Taxi taxi4 = new Taxi("taxi blu 01",4,4);
+        Taxi taxi5 = new Taxi("taxi blu 01",5,5);
         ArrayList<Taxi> taxis = new ArrayList<>(Arrays.asList(taxi1,taxi2,taxi3,taxi4,taxi5));
         for(Taxi taxi : taxis)
             milan.addTaxi(taxi);

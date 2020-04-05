@@ -1,19 +1,20 @@
 package com.taxi.sa.parsing;
 
-import com.taxi.sa.parsing.input.InputCheckpoint;
-import com.taxi.sa.parsing.input.InputWall;
-import com.taxi.sa.parsing.output.Checkpoint;
-import com.taxi.sa.parsing.output.CityMap;
-import com.taxi.sa.parsing.output.Wall;
-import com.taxi.sa.parsing.users.Taxi;
+import com.taxi.sa.parsing.input.city.InputCheckpoint;
+import com.taxi.sa.parsing.input.city.InputWall;
+import com.taxi.sa.parsing.input.user.InputCoordinate;
+import com.taxi.sa.parsing.output.city.Checkpoint;
+import com.taxi.sa.parsing.output.city.CityMap;
+import com.taxi.sa.parsing.output.city.Wall;
+import com.taxi.sa.parsing.output.user.Taxi;
 import com.taxi.sa.repositories.CheckpointRepository;
 import com.taxi.sa.repositories.MapRepository;
 import com.taxi.sa.repositories.TaxiRepository;
 import com.taxi.sa.repositories.WallRepository;
-import org.hibernate.MappingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.PersistenceException;
 import java.util.Optional;
 
 // Verifies input data is sound
@@ -45,10 +46,9 @@ public class PersistanceService {
         this.taxiRepository = taxiRepository;
     }
 
-    public void save(InputMapInterface inputMap) {
-
+    public void save(InputMapInterface inputMap) throws PersistenceException {
         // Creating the new CityMap, eventually overwriting any old entry
-        String cityId = inputMap.getCityId();
+        String cityId = inputMap.getCityId().toLowerCase();
         int width = inputMap.getWidth();
         int height = inputMap.getHeight();
         CityMap newEntry = new CityMap(cityId,width,height);
@@ -72,17 +72,19 @@ public class PersistanceService {
             newEntry.addCheckpoint(outputCheckpoint);
             checkpointRepository.save(outputCheckpoint);
         }
-
     }
 
-    public void storeTaxi(String taxiId, String city, Coordinate position) {
-        if(mapRepository.findById(city).isEmpty())
-            throw new MappingException("no city named '" + city + "' exists");
-        CityMap cityMap = mapRepository.findById(city).get();
-        Taxi taxi = new Taxi(taxiId, position, cityMap);
+    public void save(String taxiId, String city, InputCoordinate position) throws PersistenceException {
+        CityMap referencedMap = mapRepository.findById(city).get();
+        Taxi taxi = new Taxi(taxiId, position);
         if(taxiRepository.findById(taxiId).isPresent())
             taxiRepository.delete(taxi);
+        referencedMap.addTaxi(taxi);
         taxiRepository.save(taxi);
+    }
+
+    public void save(InputCoordinate inputCoordinate) {
+
     }
 
 }

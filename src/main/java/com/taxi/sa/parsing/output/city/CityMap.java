@@ -1,6 +1,6 @@
-package com.taxi.sa.parsing.output;
+package com.taxi.sa.parsing.output.city;
 
-import com.taxi.sa.parsing.users.Taxi;
+import com.taxi.sa.parsing.output.user.Taxi;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

@@ -1,6 +1,6 @@
-package com.taxi.sa.parsing.output;
+package com.taxi.sa.parsing.output.city;
 
-import com.taxi.sa.parsing.input.InputWall;
+import com.taxi.sa.parsing.input.city.InputWall;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -18,6 +18,8 @@ public class Wall implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "city_id")
     private CityMap cityMap;
+
+    public Wall() {}
 
     public Wall(int x1, int y1, int x2, int y2) {
         this.x1 = x1;

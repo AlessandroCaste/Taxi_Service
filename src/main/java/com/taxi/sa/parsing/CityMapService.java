@@ -1,6 +1,11 @@
 package com.taxi.sa.parsing;
 
 import com.taxi.sa.exceptions.CityMapParsingException;
+import com.taxi.sa.exceptions.TaxiValidationException;
+import com.taxi.sa.exceptions.UserRequestException;
+import com.taxi.sa.parsing.input.user.InputCoordinate;
+import com.taxi.sa.parsing.input.user.InputRequest;
+import com.taxi.sa.parsing.output.user.UserRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +33,20 @@ public class CityMapService {
         if(!validationResult)
             throw new CityMapParsingException();
         persistanceService.save(inputMap);
+    }
+
+    public void insertion(String cityId, String taxiId, InputCoordinate inputCoordinate) throws  TaxiValidationException, PersistenceException {
+        boolean validationResult = validatorService.validate(cityId, inputCoordinate);
+        if(!validationResult)
+            throw new TaxiValidationException();
+        persistanceService.save(cityId,taxiId,inputCoordinate);
+    }
+
+    public void insertion(String cityId, InputRequest inputRequest) throws UserRequestException {
+        boolean validationResult = validatorService.validate(cityId,inputRequest);
+        if(!validationResult)
+            throw new UserRequestException();
+        UserRequest userRequest = new UserRequest(cityId,inputRequest);
     }
 
 }

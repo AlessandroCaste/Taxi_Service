@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class RestResponseEntityExceptionHandler {
 
-    //TODO better message formatting
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     @ResponseBody
     ResponseEntity<String> handleHttpMediaTypeNotSupportedException(HttpServletRequest request, Throwable ex) {
@@ -32,12 +31,17 @@ public class RestResponseEntityExceptionHandler {
         return new ResponseEntity<>("invalid map data",HttpStatus.BAD_REQUEST);
     }
 
-   /* @ExceptionHandler(Exception.class)
+    @ExceptionHandler(TaxiValidationException.class)
+    @ResponseBody
+    ResponseEntity<String> handleTaxiValidationException(Throwable ex) {
+        return new ResponseEntity<>("invalid taxi submission", HttpStatus.BAD_REQUEST);
+    }
+
+    // A bit risky perhaps, but well suited to hiding internal logic to the external user
+   @ExceptionHandler(Exception.class)
     @ResponseBody
     ResponseEntity<String> handleGenericException(HttpServletRequest request, Throwable ex) {
         return new ResponseEntity<>("internal error",HttpStatus.INTERNAL_SERVER_ERROR);
-    }*/
-
-
+    }
 
 }

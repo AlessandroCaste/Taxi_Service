@@ -1,12 +1,14 @@
-package com.taxi.sa.parsing;
+package com.taxi.sa.parsing.output.user;
+
+import com.taxi.sa.parsing.input.user.InputCoordinate;
 
 public class Coordinate {
 
     private int x, y;
 
-    public Coordinate(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Coordinate(InputCoordinate inputCoordinate) {
+        this.x = inputCoordinate.getX();
+        this.y = inputCoordinate.getY();
     }
 
     public int getX() {

@@ -1,8 +1,8 @@
 package com.taxi.sa;
 
-import com.taxi.sa.parsing.output.Checkpoint;
-import com.taxi.sa.parsing.output.CityMap;
-import com.taxi.sa.parsing.output.Wall;
+import com.taxi.sa.parsing.output.city.Checkpoint;
+import com.taxi.sa.parsing.output.city.CityMap;
+import com.taxi.sa.parsing.output.city.Wall;
 import com.taxi.sa.repositories.CheckpointRepository;
 import com.taxi.sa.repositories.MapRepository;
 import com.taxi.sa.repositories.TaxiRepository;

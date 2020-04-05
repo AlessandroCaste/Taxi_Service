@@ -1,9 +1,16 @@
-package com.taxi.sa.parsing.input;
+package com.taxi.sa.parsing.input.city;
 
-public class InputWall {
+
+public class InputCheckpoint {
+
+    private float price;
     private int x1, y1, x2, y2;
 
-    public InputWall() {
+    public InputCheckpoint() {
+    }
+
+    public float getPrice() {
+        return price;
     }
 
     public int getX1() {
@@ -23,3 +30,5 @@ public class InputWall {
     }
 
 }
+
+

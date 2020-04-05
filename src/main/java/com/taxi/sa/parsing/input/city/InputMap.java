@@ -1,8 +1,8 @@
-package com.taxi.sa.parsing.input;
+package com.taxi.sa.parsing.input.city;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.taxi.sa.parsing.InputMapInterface;
-import com.taxi.sa.parsing.output.CityMap;
+import com.taxi.sa.parsing.output.city.CityMap;
 
 import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
