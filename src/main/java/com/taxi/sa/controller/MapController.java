@@ -38,14 +38,14 @@ public class MapController {
     }
 
     @Async
-    @RequestMapping(value = "/maps/", method = RequestMethod.POST, consumes = "application/json")
+    @RequestMapping(value = "/maps/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> addMap(@Valid @RequestBody InputMapInterface inputMap) throws CityMapParsingException {
             cityMapService.insertion(inputMap);
             return new ResponseEntity<>("{}", HttpStatus.CREATED);
     }
 
     @Async
-    @RequestMapping(path = "/maps/{city}/taxi_positions/{taxiId}", method = RequestMethod.POST, consumes = "application/json")
+    @RequestMapping(path = "/maps/{city}/taxi_positions/{taxiId}", method = RequestMethod.POST, consumes = "application/json",produces = "application/json")
     public ResponseEntity<String> insertTaxi(@PathVariable(value = "city") String city, @PathVariable(value = "taxiId") String taxiId, @Valid @RequestBody InputCoordinate position)
     throws TaxiValidationException {
         cityMapService.insertion(city, taxiId, position);
@@ -54,7 +54,7 @@ public class MapController {
 
     // I'm assuming here that the user is also providing the city!
     @Async
-    @RequestMapping(value = "{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json")
+    @RequestMapping(value = "{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)
     throws UserRequestException {
         cityMapService.insertion(city,inputRequest);

@@ -47,7 +47,7 @@ public class PersistanceService {
     }
 
     public void save(InputMapInterface inputMap) throws PersistenceException {
-        // Creating the new CityMap, eventually overwriting any old entry
+        // Creating the new CityMap, deleting any old entry with the same name
         String cityId = inputMap.getCityId().toLowerCase();
         int width = inputMap.getWidth();
         int height = inputMap.getHeight();
@@ -57,21 +57,21 @@ public class PersistanceService {
             previousEntry.get().clear();
             mapRepository.delete(previousEntry.get());
         }
-        mapRepository.save(newEntry);
 
         // Creating and linking walls
         for(InputWall inputWall: inputMap.getWalls()) {
             Wall outputWall = new Wall(inputWall);
             newEntry.addWall(outputWall);
-            wallRepository.save(outputWall);
         }
 
         // Creating and linking checkpoints
         for(InputCheckpoint inputCheckpoint: inputMap.getCheckpoints()) {
             Checkpoint outputCheckpoint = new Checkpoint(inputCheckpoint);
             newEntry.addCheckpoint(outputCheckpoint);
-            checkpointRepository.save(outputCheckpoint);
         }
+
+        // Storing the new map
+        mapRepository.save(newEntry);
     }
 
     public void save(String taxiId, String city, InputCoordinate position) throws PersistenceException {

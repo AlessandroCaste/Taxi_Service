@@ -10,7 +10,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 
@@ -33,7 +32,7 @@ public class MapControllerTest {
     // Testing controller correctly sets up
     @Test
     public void basicTest() throws Exception {
-        MvcResult result = mvc.perform(MockMvcRequestBuilders.get("/")
+        mvc.perform(MockMvcRequestBuilders.get("/")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isOk())
@@ -45,12 +44,12 @@ public class MapControllerTest {
     // Testing correct json map submission
     @Test
     public void postMap() throws Exception {
-        MvcResult result = mvc.perform(MockMvcRequestBuilders.post("/maps/")
+        mvc.perform(MockMvcRequestBuilders.post("/maps/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_map.json")))))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isCreated())
-                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(content().string("{}"))
                 .andReturn();
     }
@@ -62,8 +61,8 @@ public class MapControllerTest {
                 .contentType(MediaType.APPLICATION_XML))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isUnsupportedMediaType())
-                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
-                .andExpect(content().string("json data required"))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{ \"message\" : \"json data required\", \"httpStatus\" : 415 }"))
                 .andReturn();
 
         mvc.perform(MockMvcRequestBuilders.post("/maps/")
@@ -74,8 +73,8 @@ public class MapControllerTest {
                         "  \"height\": 10,\n}"))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().is4xxClientError())
-                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
-                .andExpect(content().string("malformed submission"))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{\"message\":\"malformed submission\",\"httpStatus\":400}"))
                 .andReturn();
     }
 
@@ -87,7 +86,7 @@ public class MapControllerTest {
                 .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_position.json")))))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isCreated())
-                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(content().string("{}"))
                 .andReturn();
     }
@@ -100,8 +99,8 @@ public class MapControllerTest {
                 .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_position.json")))))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isUnsupportedMediaType())
-                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
-                .andExpect(content().string("json data required"))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{\"message\":\"json data required\",\"httpStatus\":415}"))
                 .andReturn();
 
         mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxiblu/")
@@ -113,8 +112,8 @@ public class MapControllerTest {
                         "}"))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isBadRequest())
-                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
-                .andExpect(content().string("malformed submission"))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().string("{\"message\":\"malformed submission\",\"httpStatus\":400}"))
                 .andReturn();
     }
 

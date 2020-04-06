@@ -15,33 +15,33 @@ public class RestResponseEntityExceptionHandler {
 
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     @ResponseBody
-    ResponseEntity<String> handleHttpMediaTypeNotSupportedException(HttpServletRequest request, Throwable ex) {
-        return new ResponseEntity<>("json data required", HttpStatus.UNSUPPORTED_MEDIA_TYPE);
+    ResponseEntity<JsonResponse> handleHttpMediaTypeNotSupportedException(HttpServletRequest request, Throwable ex) {
+        return new ResponseEntity<>(new JsonResponse("json data required", 415), HttpStatus.UNSUPPORTED_MEDIA_TYPE);
     }
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     @ResponseBody
-    ResponseEntity<String> handleHttpMessageNotReadableException(HttpServletRequest request, Throwable ex) {
-        return new ResponseEntity<>("malformed submission", HttpStatus.BAD_REQUEST);
+    ResponseEntity<JsonResponse> handleHttpMessageNotReadableException(HttpServletRequest request, Throwable ex) {
+        return new ResponseEntity<>(new JsonResponse("malformed submission",400),HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(CityMapParsingException.class)
     @ResponseBody
-    ResponseEntity<String> handleCityMapParsingException(Throwable ex) {
-        return new ResponseEntity<>("invalid map data",HttpStatus.BAD_REQUEST);
+    ResponseEntity<JsonResponse> handleCityMapParsingException(Throwable ex) {
+        return new ResponseEntity<>(new JsonResponse("invalid map data",400),HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(TaxiValidationException.class)
     @ResponseBody
-    ResponseEntity<String> handleTaxiValidationException(Throwable ex) {
-        return new ResponseEntity<>("invalid taxi submission", HttpStatus.BAD_REQUEST);
+    ResponseEntity<JsonResponse> handleTaxiValidationException(Throwable ex) {
+        return new ResponseEntity<>(new JsonResponse("invalid taxi submission",400), HttpStatus.BAD_REQUEST);
     }
 
     // A bit risky perhaps, but well suited to hiding internal logic to the external user
-   @ExceptionHandler(Exception.class)
+    @ExceptionHandler(Exception.class)
     @ResponseBody
-    ResponseEntity<String> handleGenericException(HttpServletRequest request, Throwable ex) {
-        return new ResponseEntity<>("internal error",HttpStatus.INTERNAL_SERVER_ERROR);
+    ResponseEntity<JsonResponse> handleGenericException(HttpServletRequest request, Throwable ex) {
+        return new ResponseEntity<>(new JsonResponse("internal error",500),HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 }

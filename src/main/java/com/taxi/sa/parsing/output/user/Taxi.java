@@ -30,6 +30,10 @@ public class Taxi {
         this.y = y;
     }
 
+    public Coordinate getCoordinate() {
+        return new Coordinate(x,y);
+    }
+
     public String getTaxiId() {
         return taxiId;
     }

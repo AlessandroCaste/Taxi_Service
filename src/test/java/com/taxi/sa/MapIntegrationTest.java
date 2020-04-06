@@ -3,10 +3,12 @@ package com.taxi.sa;
 import com.taxi.sa.parsing.output.city.Checkpoint;
 import com.taxi.sa.parsing.output.city.CityMap;
 import com.taxi.sa.parsing.output.city.Wall;
+import com.taxi.sa.parsing.output.user.Taxi;
 import com.taxi.sa.repositories.CheckpointRepository;
 import com.taxi.sa.repositories.MapRepository;
 import com.taxi.sa.repositories.TaxiRepository;
 import com.taxi.sa.repositories.WallRepository;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +19,15 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -53,17 +58,21 @@ public class MapIntegrationTest {
     @Autowired
     private MockMvc mvc;
 
-    // The milan man is uploaded: checks ensue
-    @Test
-    public void postingAMap() throws Exception {
+    // Loading the default map before starting the tests
+    @Before
+    public void postAMap() throws Exception {
         mvc.perform(post( "/maps/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_map.json")))))
                 .andExpect(status().isCreated())
                 .andExpect(content()
-                        .contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
-                .andExpect(content().string("{}"));
+                        .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{}"));
+    }
 
+    // The milan map has been uploaded: checks ensue
+    @Test
+    public void validatingMapUpload() throws Exception {
         // Testing Map retrieval
         Optional<CityMap> foundCity = mapRepository.findById("milan");
         assertThat(foundCity.isPresent(),is(true));
@@ -97,5 +106,97 @@ public class MapIntegrationTest {
 
     }
 
+    // Name's pretty explicative
+    @Test
+    public void postingATaxi() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxiblu/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(new String(Files.readAllBytes(Paths.get("src/test/resources/taxi_position.json")))))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isCreated())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{}"))
+                .andReturn();
+
+        // Testing taxi retrieval
+        Optional<Taxi> foundTaxi = taxiRepository.findById("taxiblu");
+        assertThat(foundTaxi.isPresent(),is(true));
+        Taxi taxi = foundTaxi.get();
+        assertThat(taxi.getCoordinate().toString(),is("(2,6)"));
+
+        // Adding another taxi with the same id; verifying the previous entry is correctly overwritten
+        mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxiblu/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{ \"x\":2, \"y\":2}"))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isCreated())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{}"))
+                .andReturn();
+
+        foundTaxi = taxiRepository.findById("taxiblu");
+        assertThat(foundTaxi.isPresent(),is(true));
+        taxi = foundTaxi.get();
+        assertThat(taxi.getCoordinate().toString(),is("(2,2)"));
+
+        // Checking there's only one entry
+        Optional<CityMap> foundCity = mapRepository.findById("milan");
+        assertThat(foundCity.isPresent(),is(true));
+        CityMap milan = foundCity.get();
+        Optional<List<Taxi>> foundTaxis = taxiRepository.findAllByCityMap(milan);
+        assertThat(foundTaxis.isPresent(),is(true));
+        ArrayList<Taxi> milanTaxis = new ArrayList<>(foundTaxis.get());
+        assertThat(milanTaxis.size(),is(1));
+
+        // Posting taxi with wrong coordinates
+        mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxibad/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{ \"x\":15, \"y\":2}"))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isBadRequest())
+                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andExpect(content().json("{\"message\" : \"invalid taxi submission\",\"httpStatus\":400}"))
+                .andReturn();
+    }
+
+    // Trying loading a huge number of cities and taxis
+    @Test
+    public void loadTesting() throws Exception {
+        Random r = new Random();
+
+        // Many cities: I'm attaching a different city name to the standard milan body
+        // This  way I'll get many walls/checkpoints-stuffed cities and no entities reuse
+        String cityMapBody = new String(Files.readAllBytes(Paths.get("src/test/resources/city_map_body.json")));
+        for(int counter = 0; counter<2000; counter++) {
+            mvc.perform(post("/maps/")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .content("{ \"city\": \"milan" + counter + "\"," + cityMapBody))
+                    .andExpect(status().isCreated())
+                    .andExpect(content()
+                            .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                    .andExpect(content().json("{}"));
+            Optional<CityMap> foundMap = mapRepository.findById("milan"+counter);
+            assertThat(foundMap.isPresent(),is(true));
+        }
+        ArrayList<CityMap> cities = new ArrayList<>(mapRepository.findAll());
+        assertThat(cities.size(),is(2001));
+
+        // Many taxis
+        for(int counter = 0; counter<2000; counter++) {
+            int x = r.nextInt(12) + 1;
+            int y = r.nextInt(9) + 1;
+            String ciao = "{ \"x\":"+ x + ",\"y\":" + y + "}";
+            mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxi " + counter + "/")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .content("{ \"x\":" + x + ", \"y\":" + y + "}"))
+                    .andDo(MockMvcResultHandlers.print())
+                    .andExpect(status().isCreated())
+                    .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                    .andExpect(content().json("{}"))
+                    .andReturn();
+        }
+        ArrayList<Taxi> taxis = new ArrayList<>(taxiRepository.findAll());
+        assertThat(taxis.size(),is(2000));
+    }
 
 }
