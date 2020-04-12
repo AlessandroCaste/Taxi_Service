@@ -1,203 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec6c8062-3760-4f10-8cbd-c6d667235afe" name="Default Changelist" comment="Project restructuring with distinct modules">
-      <change afterPath="$PROJECT_DIR$/../LangSandbox" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/androidTest/java/com/example/utente/myasdasd/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/java/com/example/utente/myasdasd/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/java/com/example/utente/myasdasd/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/app/src/test/java/com/example/utente/myasdasd/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Myasdasd/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_12_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jheaps_jheaps_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/CityMapb.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/CityRoute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/Controller/MapController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/Coordinates.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/ReceivedMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityEdge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityEdgeSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityVertex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/graph/CityVertexSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/Checkpoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/CityMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/JsonValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/parsing/Wall.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/repository/CheckpointRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/repository/MapRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/repository/WallRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/users/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/taxi/springboot/users/Taxi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/taxi_map.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../antlr-mega-tutorial" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../antlr4example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigmc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bullet3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../feup-COMP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kanvas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/out/production/untitled/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigraphGUI/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/libraries/com_fifesoft_rsyntaxtextarea_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/libraries/org_pushing_pixels_radiance_substance_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigraphGUI/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/ANTLRGrammar/Bigraph.g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/BigraphGUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/Resources/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/Bigraph.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/Bigraph.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/gen/BigraphVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/Bigraph.g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/MainView.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/MainView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/PopupMenuDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BigraphGUI/src/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taxi Service.iml" beforeDir="false" />
+    <list default="true" id="ec6c8062-3760-4f10-8cbd-c6d667235afe" name="Default Changelist" comment="Manhattan distance check, Checkpoint price check">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxi/sa/exceptions/RestResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxi/sa/exceptions/RestResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/ValidatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/ValidatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/input/user/InputCoordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/input/user/InputCoordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/output/city/Checkpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/output/city/Checkpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/taxi/sa/EntitiesRetrievalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/taxi/sa/EntitiesRetrievalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/taxi/sa/MapIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/taxi/sa/MapIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/city_map_body.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/city_map_body.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/taxi_map.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/taxi_map.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="211" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -235,80 +56,136 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/taxi/fe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/taxi/fe/parsing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15865384" />
     <property name="project.structure.side.proportion" value="0.25664622" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service_BackEnd\src\main\java\com\taxi\be" />
-      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service_BackEnd\src\main\java\com\taxi\be\be" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service" />
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service\src\main\java\com\taxi\sa\repository" />
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service\src\main\java\com\taxi\sa\parsing\city" />
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service\src\main\java\com\taxi\sa" />
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service\src\main\java\com\taxi\fe\parsing" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.taxi.fe.feparsing" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service\src\main\java\com\taxi\fe\parsing" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service_BackEnd\src\main\java\com\taxi\be" />
+      <recent name="C:\Users\Utente\Documents\GitHub\Taxi_Service_BackEnd\src\main\java\com\taxi\be\be" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.taxi.fe.Application" />
-      <module name="Taxi_Service_FrontEnd" />
+  <component name="RunManager" selected="JUnit.MapIntegrationTest.loadTesting">
+    <configuration name="Taxi_Service A" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.taxi.sa.Application" />
+      <module name="Taxi_Service A" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Taxi_Service_FrontEnd" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="EntitiesRetrievalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Taxi_Service A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.taxi.sa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.taxi.sa" />
+      <option name="MAIN_CLASS_NAME" value="com.taxi.sa.EntitiesRetrievalTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Taxi_Service_FrontEnd" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="EntitiesRetrievalTest.checkRetrieval" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Taxi_Service A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.taxi.sa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.taxi.sa" />
+      <option name="MAIN_CLASS_NAME" value="com.taxi.sa.EntitiesRetrievalTest" />
+      <option name="METHOD_NAME" value="checkRetrieval" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MapIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Taxi_Service A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.taxi.sa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.taxi.sa" />
+      <option name="MAIN_CLASS_NAME" value="com.taxi.sa.MapIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapIntegrationTest.loadTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Taxi_Service A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.taxi.sa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.taxi.sa" />
+      <option name="MAIN_CLASS_NAME" value="com.taxi.sa.MapIntegrationTest" />
+      <option name="METHOD_NAME" value="loadTesting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapIntegrationTest.validatingMapUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Taxi_Service A" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.taxi.sa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.taxi.sa" />
+      <option name="MAIN_CLASS_NAME" value="com.taxi.sa.MapIntegrationTest" />
+      <option name="METHOD_NAME" value="validatingMapUpload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Taxi_Service A" />
+      <item itemvalue="JUnit.EntitiesRetrievalTest" />
+      <item itemvalue="JUnit.MapIntegrationTest" />
+      <item itemvalue="JUnit.EntitiesRetrievalTest.checkRetrieval" />
+      <item itemvalue="JUnit.MapIntegrationTest.validatingMapUpload" />
+      <item itemvalue="JUnit.MapIntegrationTest.loadTesting" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MapIntegrationTest.loadTesting" />
+        <item itemvalue="JUnit.EntitiesRetrievalTest.checkRetrieval" />
+        <item itemvalue="JUnit.MapIntegrationTest.validatingMapUpload" />
+        <item itemvalue="JUnit.EntitiesRetrievalTest" />
+        <item itemvalue="JUnit.MapIntegrationTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -323,7 +200,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Utente\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -354,7 +231,70 @@
       <option name="project" value="LOCAL" />
       <updated>1585266671087</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Entity and JPA inclusion">
+      <created>1585520393281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585520393281</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Testing reviewed, taxi entity tweaks">
+      <created>1585679578454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585679578454</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Integration testing has been added">
+      <created>1586019780096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586019780096</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactoring of input parsing, WIP">
+      <created>1586027212740</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586027212740</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Input map decoupling with interfaces and new services">
+      <created>1586044263671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586044263671</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refining service structure">
+      <created>1586096417731</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586096417731</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Taxi insertion fix; taxi testing expanded">
+      <created>1586128992363</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586128992363</updated>
+    </task>
+    <task id="LOCAL-00011" summary="More testing cases, json responses enabled">
+      <created>1586201943486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586201943486</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Pushing idea folder">
+      <created>1586205437555</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586205437555</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -362,31 +302,84 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="More POST requests, persistence testing" />
     <MESSAGE value="Project restructuring with distinct modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project restructuring with distinct modules" />
+    <MESSAGE value="Entity and JPA inclusion" />
+    <MESSAGE value="Testing reviewed, taxi entity tweaks" />
+    <MESSAGE value="Integration testing has been added" />
+    <MESSAGE value="Refactoring of input parsing, WIP" />
+    <MESSAGE value="Input map decoupling with interfaces and new services" />
+    <MESSAGE value="More detailed validation" />
+    <MESSAGE value="Refining service structure" />
+    <MESSAGE value="Taxi insertion fix; taxi testing expanded" />
+    <MESSAGE value="More testing cases, json responses enabled" />
+    <MESSAGE value="Pushing idea folder" />
+    <MESSAGE value="Manhattan distance check, Checkpoint price check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manhattan distance check, Checkpoint price check" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1018" y="192" key="#Auto_Import" timestamp="1585576071701">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1018" y="192" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1585576071701" />
     <state x="552" y="184" key="#Inspections" timestamp="1585249347614">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1585249347614" />
-    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584970794489">
+    <state x="552" y="184" key="#Project_Structure" timestamp="1585515946587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="552" y="184" key="#Project_Structure/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585515946587" />
+    <state x="679" y="168" width="601" height="714" key="#Taxi_Service_A" timestamp="1585516370576">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="679" y="168" width="601" height="714" key="#Taxi_Service_A/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585516370576" />
+    <state x="679" y="168" width="601" height="714" key="#Unnamed" timestamp="1585516357459">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="679" y="168" width="601" height="714" key="#Unnamed/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585516357459" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585516338103">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585516338103" />
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1584970794489" />
-    <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1585247237860">
+    <state x="92" y="92" width="1736" height="866" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586735673794">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="3165" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1584915160381" />
-    <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1585247237860" />
+    <state x="92" y="92" width="1736" height="866" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586735673794" />
+    <state x="705" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586197182837">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="705" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1586197182837" />
+    <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1586279917061">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="3165" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585578866256" />
+    <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1586279917061" />
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585515979558">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585515979558" />
+    <state x="808" y="414" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585515618520">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="808" y="414" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585515618520" />
+    <state x="2728" y="414" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585493152481" />
     <state x="1113" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585034115144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -395,22 +388,47 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="103" y="451" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585248826582" />
-    <state x="756" y="406" width="408" height="246" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585222015296">
+    <state x="756" y="406" width="408" height="305" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585759770135">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="756" y="406" width="408" height="246" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1585222015296" />
-    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585220795463">
+    <state x="756" y="406" width="408" height="305" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585515279236" />
+    <state x="756" y="406" width="408" height="305" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1585759770135" />
+    <state x="731" y="356" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1585663693372">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585220795463" />
-    <state x="598" y="52" key="CommitChangelistDialog2" timestamp="1585308112507">
+    <state x="731" y="356" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585663693372" />
+    <state x="376" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586088286747">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="598" y="52" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1585308112507" />
-    <state x="205" y="114" key="DiffContextDialog" timestamp="1585266649122">
+    <state x="376" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586088286747" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585514040608">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="205" y="114" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585266649122" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585514040608" />
+    <state x="896" y="610" width="490" height="392" key="#xdebugger.evaluate" timestamp="1586647240255">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2635" y="518" width="490" height="389" key="#xdebugger.evaluate/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585588931961" />
+    <state x="896" y="610" width="490" height="392" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1586647240255" />
+    <state x="707" y="360" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586096025017">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="707" y="360" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1586096025017" />
+    <state x="598" y="52" width="718" height="866" key="CommitChangelistDialog2" timestamp="1586735822493">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="598" y="52" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585520392438" />
+    <state x="598" y="52" width="718" height="866" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586735822493" />
+    <state x="205" y="114" key="DiffContextDialog" timestamp="1586735802916">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="205" y="114" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586735802916" />
+    <state x="628" y="297" key="FileChooserDialogImpl" timestamp="1586205453353">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="628" y="297" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585515899370" />
+    <state x="2548" y="297" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585493135289" />
+    <state x="628" y="297" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1586205453353" />
     <state width="1877" height="330" key="GridCell.Tab.-1.bottom" timestamp="1585157711205">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -427,38 +445,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="330" key="GridCell.Tab.-1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585157711205" />
-    <state width="1877" height="330" key="GridCell.Tab.0.bottom" timestamp="1585227806327">
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom" timestamp="1586735830865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
-    <state width="1877" height="330" key="GridCell.Tab.0.center" timestamp="1585227806326">
+    <state width="916" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1586735830865" />
+    <state width="1877" height="339" key="GridCell.Tab.0.center" timestamp="1586735830865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806326" />
-    <state width="1877" height="330" key="GridCell.Tab.0.left" timestamp="1585227806326">
+    <state width="916" height="332" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="339" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1586735830865" />
+    <state width="1877" height="339" key="GridCell.Tab.0.left" timestamp="1586735830865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806326" />
-    <state width="1877" height="330" key="GridCell.Tab.0.right" timestamp="1585227806327">
+    <state width="916" height="332" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085714" />
+    <state width="1877" height="339" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1586735830865" />
+    <state width="1877" height="339" key="GridCell.Tab.0.right" timestamp="1586735830865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
-    <state width="1877" height="330" key="GridCell.Tab.1.bottom" timestamp="1585227806327">
+    <state width="916" height="332" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="339" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1586735830865" />
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1586649423237">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
-    <state width="1877" height="330" key="GridCell.Tab.1.center" timestamp="1585227806327">
+    <state width="916" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1586649423237" />
+    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1586649423236">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
-    <state width="1877" height="330" key="GridCell.Tab.1.left" timestamp="1585227806327">
+    <state width="916" height="332" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1586649423236" />
+    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1586649423236">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
-    <state width="1877" height="330" key="GridCell.Tab.1.right" timestamp="1585227806327">
+    <state width="916" height="332" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1586649423236" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1586649423237">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585227806327" />
+    <state width="916" height="332" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585523679667" />
+    <state width="1877" height="329" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585590085715" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1586649423237" />
     <state width="1877" height="330" key="GridCell.Tab.2.bottom" timestamp="1585157705289">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -475,30 +509,43 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="330" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585157705289" />
+    <state x="2410" y="180" key="Maven.ArtifactSearchDialog" timestamp="1585493232347">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2410" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585493232347" />
     <state x="719" y="236" key="RollbackChangesDialog" timestamp="1584970692279">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="719" y="236" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1584970692279" />
-    <state x="328" y="130" key="SettingsEditor" timestamp="1585251102210">
+    <state x="328" y="130" key="SettingsEditor" timestamp="1586195866806">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="328" y="130" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585251102210" />
-    <state x="553" y="258" key="Vcs.Push.Dialog.v2" timestamp="1585308199746">
+    <state x="328" y="130" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585520871756" />
+    <state x="2248" y="130" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585493145115" />
+    <state x="328" y="130" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1586195866806" />
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2" timestamp="1586735917594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="553" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1585308199746" />
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585520876956" />
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586735917594" />
     <state x="776" y="303" width="560" height="443" key="chooseDestDirectoryDialog" timestamp="1585249359888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="776" y="303" width="560" height="443" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585249359888" />
-    <state x="1129" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585308059279">
+    <state x="1129" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1586703438854">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1129" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585308059279" />
-    <state x="654" y="241" width="630" height="568" key="find.popup" timestamp="1585266702303">
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585516051915" />
+    <state x="2576" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1585515813393" />
+    <state x="1129" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586703438854" />
+    <state x="769" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586043915413">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="654" y="241" width="630" height="568" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1585266702303" />
+    <state x="769" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586043915413" />
+    <state x="654" y="241" width="630" height="568" key="find.popup" timestamp="1586608405645">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="654" y="241" width="630" height="568" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586608405645" />
     <state x="659" y="317" key="git4idea.merge.GitPullDialog" timestamp="1585120129769">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -507,10 +554,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="167" y="149" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1585249020966" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1585249967134">
+    <state x="1067" y="263" width="700" height="530" key="recent.locations.popup" timestamp="1585576158883">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1585249967134" />
+    <state x="1067" y="263" width="700" height="530" key="recent.locations.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1585576158883" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1586198745493">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586198745493" />
+    <state x="616" y="178" width="672" height="676" key="search.everywhere.popup" timestamp="1586092160347">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="178" width="672" height="676" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586092160347" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,7 +580,102 @@
           <line>23</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/ControllerMapIntegration.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/ControllerMapIntegration.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/MapIntegrationTest.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/MapIntegrationTest.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/MapControllerTest.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/MapControllerTest.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/MapControllerTest.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/output/city/CityMap.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/PersistanceService.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/controller/MapController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/ValidatorService.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/CityMapService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/ValidatorService.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/PersistanceService.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/taxi/sa/parsing/PersistanceService.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/taxi/sa/MapIntegrationTest.java</url>
+          <line>163</line>
+          <properties class="com.taxi.sa.MapIntegrationTest" method="loadTesting">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Taxi_Service$Taxi_Service_A.ic" NAME="Taxi_Service A Coverage Results" MODIFIED="1586454831841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Taxi_Service$MapControllerTest_postWrongTaxi.ic" NAME="MapControllerTest.postWrongTaxi Coverage Results" MODIFIED="1586455042084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.taxi.sa.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Taxi_Service$EntitiesRetrievalTest.ic" NAME="EntitiesRetrievalTest Coverage Results" MODIFIED="1586455056168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.taxi.sa.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Taxi_Service$MapIntegrationTest.ic" NAME="MapIntegrationTest Coverage Results" MODIFIED="1586455010649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.taxi.sa.*</FILTER>
+    </SUITE>
   </component>
 </project>

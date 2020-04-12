@@ -12,4 +12,19 @@ public class InputCoordinate {
         return y;
     }
 
+    @Override
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return (o instanceof InputCoordinate) && (toString().equals(o.toString()));
+    }
+
+    @Override
+    public int hashCode() {
+        return toString().hashCode();
+    }
+
 }

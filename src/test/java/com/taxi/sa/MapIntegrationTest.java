@@ -167,7 +167,7 @@ public class MapIntegrationTest {
         // Many cities: I'm attaching a different city name to the standard milan body
         // This  way I'll get many walls/checkpoints-stuffed cities and no entities reuse
         String cityMapBody = new String(Files.readAllBytes(Paths.get("src/test/resources/city_map_body.json")));
-        for(int counter = 0; counter<2000; counter++) {
+        for(int counter = 0; counter<500; counter++) {
             mvc.perform(post("/maps/")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content("{ \"city\": \"milan" + counter + "\"," + cityMapBody))
@@ -179,10 +179,10 @@ public class MapIntegrationTest {
             assertThat(foundMap.isPresent(),is(true));
         }
         ArrayList<CityMap> cities = new ArrayList<>(mapRepository.findAll());
-        assertThat(cities.size(),is(2001));
+        assertThat(cities.size(),is(501));
 
         // Many taxis
-        for(int counter = 0; counter<2000; counter++) {
+        for(int counter = 0; counter<500; counter++) {
             int x = r.nextInt(12) + 1;
             int y = r.nextInt(9) + 1;
             String ciao = "{ \"x\":"+ x + ",\"y\":" + y + "}";
@@ -196,7 +196,7 @@ public class MapIntegrationTest {
                     .andReturn();
         }
         ArrayList<Taxi> taxis = new ArrayList<>(taxiRepository.findAll());
-        assertThat(taxis.size(),is(2000));
+        assertThat(taxis.size(),is(500));
     }
 
 }

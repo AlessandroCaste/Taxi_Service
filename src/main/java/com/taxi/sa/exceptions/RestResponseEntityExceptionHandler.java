@@ -37,7 +37,13 @@ public class RestResponseEntityExceptionHandler {
         return new ResponseEntity<>(new JsonResponse("invalid taxi submission",400), HttpStatus.BAD_REQUEST);
     }
 
-    // A bit risky perhaps, but well suited to hiding internal logic to the external user
+    @ExceptionHandler(UserRequestException.class)
+    @ResponseBody
+    ResponseEntity<JsonResponse> handleUserRequestException(Throwable ex) {
+        return new ResponseEntity<>(new JsonResponse("invalid user request", 400),HttpStatus.BAD_REQUEST);
+    }
+
+    // A bit raw perhaps, but well suited to hiding internal logic to the external user
     @ExceptionHandler(Exception.class)
     @ResponseBody
     ResponseEntity<JsonResponse> handleGenericException(HttpServletRequest request, Throwable ex) {

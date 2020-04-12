@@ -27,9 +27,13 @@ public class ValidatorService {
         int height = inputMap.getHeight();
         ArrayList<InputWall> walls = inputMap.getWalls();
         ArrayList<InputCheckpoint> checkpoints = inputMap.getCheckpoints();
-        boolean checkWalls = walls.stream().allMatch(x -> checkCoordinate(x.getX1(),x.getY1(),width,height) && checkCoordinate(x.getX2(),x.getY2(),width,height));
-        boolean checkCheckpoints = checkpoints.stream().allMatch(x -> checkCoordinate(x.getX1(),x.getY1(),width,height) && checkCoordinate(x.getX2(),x.getY2(),width,height));
-        return checkWalls && checkCheckpoints;
+        boolean checkWalls = walls.stream().allMatch(x -> checkManhattanDistance(x.getX1(),x.getY1(),x.getX2(),x.getY2())
+                                                          && checkBoundaries(x.getX1(),x.getY1(),width,height)
+                                                          && checkBoundaries(x.getX2(),x.getY2(),width,height));
+        boolean checkCheckpoints = checkpoints.stream().allMatch(x -> checkManhattanDistance(x.getX1(),x.getY1(),x.getX2(),x.getY2())
+                                                          && checkBoundaries(x.getX1(),x.getY1(),width,height)
+                                                          && checkBoundaries(x.getX2(),x.getY2(),width,height));
+        return  checkWalls && checkCheckpoints;
     }
 
     // The same check is applied to Taxi coordinates
@@ -38,7 +42,7 @@ public class ValidatorService {
             return false;
         int width = retrieveMapWidth(cityId);
         int height = retrieveMapHeight(cityId);
-        return checkCoordinate(inputCoordinate.getX(),inputCoordinate.getY(),width,height);
+        return checkBoundaries(inputCoordinate.getX(),inputCoordinate.getY(),width,height);
     }
 
     // Verifying the user requests
@@ -49,16 +53,22 @@ public class ValidatorService {
         int height = retrieveMapHeight(cityId);
         InputCoordinate source = inputRequest.getSource();
         InputCoordinate destination = inputRequest.getDestination();
-        boolean checkSource = checkCoordinate(source.getX(),source.getY(),width,height);
-        boolean checkDestination = checkCoordinate(destination.getX(),destination.getY(),width,height);
-        return checkSource && checkDestination;
+        boolean checkSource = checkBoundaries(source.getX(),source.getY(),width,height);
+        boolean checkDestination = checkBoundaries(destination.getX(),destination.getY(),width,height);
+        boolean sourceDestinationEqual = source.equals(destination);
+        return checkSource && checkDestination && !sourceDestinationEqual;
     }
 
     // Checking width and height for a coordinate
-    private boolean checkCoordinate(int x, int y, int mapWidth, int mapHeight) {
+    private boolean checkBoundaries(int x, int y, int mapWidth, int mapHeight) {
         boolean xCheck = x >= 1 && x <= mapWidth;
         boolean yCheck = y >= 1 && y <= mapHeight;
         return xCheck && yCheck;
+    }
+
+    private boolean checkManhattanDistance(int x1,int y1,int x2, int y2) {
+        int distance = Math.abs(x1 - x2) + Math.abs(y1 - y2);
+        return distance == 1;
     }
 
     // If the linked map already exists these method retrieves its characteristics from the repository
