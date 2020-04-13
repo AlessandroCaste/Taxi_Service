@@ -1,8 +1,9 @@
-package com.taxi.sa.parsing;
+package com.taxi.sa.services;
 
 import com.taxi.sa.exceptions.CityMapParsingException;
 import com.taxi.sa.exceptions.TaxiValidationException;
 import com.taxi.sa.exceptions.UserRequestException;
+import com.taxi.sa.parsing.InputMapInterface;
 import com.taxi.sa.parsing.input.user.InputCoordinate;
 import com.taxi.sa.parsing.input.user.InputRequest;
 import com.taxi.sa.parsing.output.user.UserRequest;
@@ -42,11 +43,12 @@ public class CityMapService {
         persistanceService.save(taxiId,cityId,inputCoordinate);
     }
 
-    public void insertion(String cityId, InputRequest inputRequest) throws UserRequestException {
+    public String insertion(String cityId, InputRequest inputRequest) throws UserRequestException {
         boolean validationResult = validatorService.validate(cityId,inputRequest);
         if(!validationResult)
             throw new UserRequestException();
         UserRequest userRequest = new UserRequest(cityId,inputRequest);
+        return new RequestService().request(userRequest);
     }
 
 }

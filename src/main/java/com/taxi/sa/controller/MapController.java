@@ -2,11 +2,10 @@ package com.taxi.sa.controller;
 
 import com.taxi.sa.exceptions.CityMapParsingException;
 import com.taxi.sa.exceptions.TaxiValidationException;
-import com.taxi.sa.exceptions.UserRequestException;
-import com.taxi.sa.parsing.CityMapService;
 import com.taxi.sa.parsing.InputMapInterface;
 import com.taxi.sa.parsing.input.user.InputCoordinate;
 import com.taxi.sa.parsing.input.user.InputRequest;
+import com.taxi.sa.services.CityMapService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -56,9 +55,9 @@ public class MapController {
     @Async
     @RequestMapping(value = "{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)
-    throws UserRequestException {
-        cityMapService.insertion(city,inputRequest);
-        return new ResponseEntity<>("{}", HttpStatus.OK);
+    throws Exception {
+        String response = cityMapService.insertion(city,inputRequest);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
 }

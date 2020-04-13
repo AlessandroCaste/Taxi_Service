@@ -68,11 +68,9 @@ public class Checkpoint implements Serializable {
     }
 
     public String coordinatesToString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("(").append(x1).append(",").append(y1)
-                .append(")->(")
-                .append(x2).append(",").append(y2).append(")");
-        return sb.toString();
+        return "(" + x1 + "," + y1 +
+                ")->(" +
+                x2 + "," + y2 + ")";
     }
 
     @Override

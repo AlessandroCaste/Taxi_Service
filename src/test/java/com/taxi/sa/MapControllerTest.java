@@ -1,7 +1,7 @@
 package com.taxi.sa;
 
 import com.taxi.sa.controller.MapController;
-import com.taxi.sa.parsing.CityMapService;
+import com.taxi.sa.services.CityMapService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

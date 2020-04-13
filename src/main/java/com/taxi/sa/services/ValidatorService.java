@@ -1,5 +1,6 @@
-package com.taxi.sa.parsing;
+package com.taxi.sa.services;
 
+import com.taxi.sa.parsing.InputMapInterface;
 import com.taxi.sa.parsing.input.city.InputCheckpoint;
 import com.taxi.sa.parsing.input.city.InputWall;
 import com.taxi.sa.parsing.input.user.InputCoordinate;
