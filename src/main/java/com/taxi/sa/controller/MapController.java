@@ -31,7 +31,7 @@ public class MapController {
     }
 
     @GetMapping("/")
-    public String homePage(Model model) {
+    public String homepage(Model model) {
         model.addAttribute("appName", appName);
         return "Welcome to " + model.getAttribute("appName");
     }
@@ -51,7 +51,6 @@ public class MapController {
         return new ResponseEntity<>("{}",HttpStatus.CREATED);
     }
 
-    // I'm assuming here that the user is also providing the city!
     @Async
     @RequestMapping(value = "{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)

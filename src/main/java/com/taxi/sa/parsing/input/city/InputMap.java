@@ -1,5 +1,6 @@
 package com.taxi.sa.parsing.input.city;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.taxi.sa.parsing.InputMapInterface;
 import com.taxi.sa.parsing.output.city.CityMap;
@@ -14,9 +15,13 @@ public class InputMap implements InputMapInterface {
     private String cityId;
     private int width;
     private int height;
+
     @JsonProperty("walls")
+    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
     private ArrayList<InputWall> walls = new ArrayList<>();
+
     @JsonProperty("checkpoints")
+    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
     private ArrayList<InputCheckpoint> checkpoints = new ArrayList<>();
 
     public String getCityId() {

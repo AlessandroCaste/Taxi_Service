@@ -22,23 +22,23 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class RequestService {
 
-    public String request(UserRequest userRequest) {
+    public String request(String cityId,UserRequest userRequest) {
         TcpClient tcpClient = TcpClient
                 .create()
-                .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000)
+                .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 50000)
                 .doOnConnected(connection -> {
-                    connection.addHandlerLast(new ReadTimeoutHandler(10000, TimeUnit.MILLISECONDS));
-                    connection.addHandlerLast(new WriteTimeoutHandler(10000, TimeUnit.MILLISECONDS));
+                    connection.addHandlerLast(new ReadTimeoutHandler(50000, TimeUnit.MILLISECONDS));
+                    connection.addHandlerLast(new WriteTimeoutHandler(50000, TimeUnit.MILLISECONDS));
                 });
 
         WebClient client = WebClient.builder()
-                .baseUrl("http://localhost:8052")
+                .baseUrl("http://serviceB:8082")
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .clientConnector(new ReactorClientHttpConnector(HttpClient.from(tcpClient)))
                 .build();
 
         ClientResponse clientResponse = Objects.requireNonNull(client.post()
-                .uri("milan/user_requests/")
+                .uri(cityId + "/user_requests/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(userRequest))
                 .exchange()
