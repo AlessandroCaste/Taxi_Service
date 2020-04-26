@@ -38,7 +38,7 @@ public class RequestService {
                 .build();
 
         ClientResponse clientResponse = Objects.requireNonNull(client.post()
-                .uri(cityId + "/user_requests/")
+                .uri("/process_request/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(userRequest))
                 .exchange()

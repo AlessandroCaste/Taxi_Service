@@ -52,7 +52,7 @@ public class MapController {
     }
 
     @Async
-    @RequestMapping(value = "{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+    @RequestMapping(value = "/{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)
     throws Exception {
         String response = cityMapService.insertion(city,inputRequest);

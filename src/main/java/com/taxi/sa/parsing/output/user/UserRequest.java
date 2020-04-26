@@ -14,6 +14,10 @@ public class UserRequest {
         this.destination = new Coordinate(inputRequest.getDestination());
     }
 
+    public String getCityId() {
+        return cityId;
+    }
+
     public Coordinate getSource() {
         return source;
     }
