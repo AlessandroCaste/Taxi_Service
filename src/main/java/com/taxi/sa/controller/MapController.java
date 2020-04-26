@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,14 +35,12 @@ public class MapController {
         return "Welcome to " + model.getAttribute("appName");
     }
 
-    @Async
     @RequestMapping(value = "/maps/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> addMap(@Valid @RequestBody InputMapInterface inputMap) throws CityMapParsingException {
             cityMapService.insertion(inputMap);
             return new ResponseEntity<>("{}", HttpStatus.CREATED);
     }
 
-    @Async
     @RequestMapping(path = "/maps/{city}/taxi_positions/{taxiId}", method = RequestMethod.POST, consumes = "application/json",produces = "application/json")
     public ResponseEntity<String> insertTaxi(@PathVariable(value = "city") String city, @PathVariable(value = "taxiId") String taxiId, @Valid @RequestBody InputCoordinate position)
     throws TaxiValidationException {
@@ -51,7 +48,6 @@ public class MapController {
         return new ResponseEntity<>("{}",HttpStatus.CREATED);
     }
 
-    @Async
     @RequestMapping(value = "/{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)
     throws Exception {
