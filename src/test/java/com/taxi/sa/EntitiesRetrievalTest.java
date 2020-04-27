@@ -94,8 +94,8 @@ public class EntitiesRetrievalTest {
         assertThat(foundCheckpointsList.size(), is(2));
         Checkpoint checkpoint1 = foundCheckpointsList.get(0);
         Checkpoint checkpoint2 = foundCheckpointsList.get(1);
-        assertThat(checkpoint1.getPrice(), is(2.0f));
-        assertThat(checkpoint2.getPrice(), is(4.0f));
+        assertThat(checkpoint1.getPrice(), is(1.0f));
+        assertThat(checkpoint2.getPrice(), is(3.0f));
         assertThat(checkpoint1.coordinatesToString(), is("(3,3)->(4,3)"));
         assertThat(checkpoint2.coordinatesToString(), is("(4,4)->(4,5)"));
     }

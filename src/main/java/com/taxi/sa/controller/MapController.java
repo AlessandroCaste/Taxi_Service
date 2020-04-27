@@ -44,14 +44,14 @@ public class MapController {
     @RequestMapping(path = "/maps/{city}/taxi_positions/{taxiId}", method = RequestMethod.POST, consumes = "application/json",produces = "application/json")
     public ResponseEntity<String> insertTaxi(@PathVariable(value = "city") String city, @PathVariable(value = "taxiId") String taxiId, @Valid @RequestBody InputCoordinate position)
     throws TaxiValidationException {
-        cityMapService.insertion(city, taxiId, position);
+        cityMapService.insertion(city.toLowerCase(), taxiId.toLowerCase(), position);
         return new ResponseEntity<>("{}",HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/{city}/user_requests/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public ResponseEntity<String> computeRoute(@PathVariable(value = "city") String city, @Valid @RequestBody InputRequest inputRequest)
     throws Exception {
-        String response = cityMapService.insertion(city,inputRequest);
+        String response = cityMapService.insertion(city.toLowerCase(),inputRequest);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
