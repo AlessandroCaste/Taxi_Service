@@ -18,6 +18,7 @@ Posts the position of a taxi with id taxiId in the map with id mapId.
 POST {city}/user_requests/
 ```
 Posts a request to compute routes from a starting point to a destination. This instruction is designed to contact service B.  
+**Note:** I decided to also include the path from the taxi to the user in the response.
 
 ## Further info
 
