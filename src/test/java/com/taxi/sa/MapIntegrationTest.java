@@ -185,7 +185,6 @@ public class MapIntegrationTest {
         for(int counter = 0; counter<500; counter++) {
             int x = r.nextInt(12) + 1;
             int y = r.nextInt(9) + 1;
-            String ciao = "{ \"x\":"+ x + ",\"y\":" + y + "}";
             mvc.perform(MockMvcRequestBuilders.post("/maps/milan/taxi_positions/taxi " + counter + "/")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content("{ \"x\":" + x + ", \"y\":" + y + "}"))
